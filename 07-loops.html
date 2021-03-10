@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparações</title>
+    <script>
+        // ativa verificações adicionais de variaveis
+        // modo "chato" do javaScript
+        'use strict'
+
+        //Loops ou estruturas de repetição são recursos que toda limguagem de prpgramação
+        //Disponibilizapara que instruçoes possam ser executadas mais de uma vez.
+
+        //1) LOOP while
+
+        //Pedir ao usuario que informe varios numeros na sequencia e vamos somar
+        // até que ele informe o valor 0. Depois disso, vamos apresentar a soma.
+        
+        let soma = 0, num
+
+        while(num !== 0) {
+            // Number tem o mesmo efeito que parsefloat
+            num = Number(prompt('Informe um numero para somar ou 0 para terminar:'))
+
+            if(! isNaN(num)){ // Se for um numero valido
+                  soma += num // Equivale a: soma = soma + num
+            }
+        }
+
+        alert(`A soma dos numeros informados é ${soma}.`)
+
+        // caracteristicas do loop white
+        // 1) quantidade de execuçoes: indeterminada
+        // 2) garantia da execução: 0 vezes (não tem garantia)
+        // 3) local de teste: no inicio
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
